@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+}
+
+
+body{
+    font-family: Montserrat, sans-serif;
+}
+
+/*------------navegacion------*/
+
+.nav{
+    background-color: #5EA9A6;
+}
+
+.nav__brand
+.nav__list,
+.nav__item{
+    display: inline-block;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav__brand, .nav__brand a, .nav__item, .nav__item a{
+    padding: 1rem;
+}
+.nav a{
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: 0;
+    transition: .3s;
+}
+
+.nav a:hover{
+    color: #64963D;
+    top: 10px;
+
+}
+
+span{
+    color:blueviolet
+}
+
+.nav__item--current a{
+    color: #593219;
+    pointer-events: none;
+    font-weight: bold;
+}
+/*-------- final---------*/
+.banner{
+    background-image: url(/img/1110.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 75vh;
+    position: relative;
+    overflow: hidden;
+    transform: translateY(20%);
+    
+}
+
+.banner__nav{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: calc(100% - 2rem);
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.banner__nav-prev,
+.banner__nav-next{
+    font-size: 4rem;
+    display: inline-block;
+}
+
+.banner__info{
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+    left: 20%;
+    width: max-content;
+    padding: 2rem;
+    color: rgb(0, 0, 0);
+}
+
+.banner__info h1{
+    font-size: 3rem;
+    transform: translatex(35%);
+    
+}
+
+.banner__info h4{
+    font-size: 3rem;
+       
+}
+
