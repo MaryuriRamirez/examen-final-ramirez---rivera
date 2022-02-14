@@ -56,9 +56,9 @@
 .historias {
     margin: 0 auto;
     color: #64963D;
-    width: 15%;
     padding: 20px;
     font-size: 1.5rem;
+    text-align: center;
     
 }
 .historia-para{
