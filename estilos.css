@@ -63,7 +63,7 @@ body{
 
 /*-------- final---------*/
 .banner{
-    background-image: url(img/1110.jpeg);
+    background-image: url(/img/1110.jpeg);
     background-position: center;
     background-size: cover;
     height: 80vh;
