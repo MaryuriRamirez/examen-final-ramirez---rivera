@@ -69,10 +69,7 @@ body{
     height: 80vh;
     position: relative;
     overflow: hidden;
-    transform: translateY(10%);
-    
-    
-    
+    transform: translateY(10%);   
 }
 
 .banner__nav{
@@ -96,21 +93,15 @@ body{
     position: absolute;
     top: 20%;
     transform: translateY(-50%);
-    left: 20%;
+    margin: 0 20%;
     width: max-content;
-    padding: 10.5rem;
     color: #5EA9A6;
 }
 
 .banner__info h1{
     font-size: 3rem;
-    transform: translatex(35%);
+    /* transform: translatex(35%); */
     
-}
-
-.banner__info h4{
-    font-size: 3rem;
-       
 }
 
 /*-------precios----*/
@@ -199,13 +190,11 @@ h3{
 } */
 
 #contact .contact {
+    width: 100vw;
     flex-direction:column;
-    max-width: 1200px; 
     margin: 0 auto;
     transform: translateX(1%);
     color: #64963D;
-    
-
 }
 
 #contact .section-title{
@@ -218,7 +207,6 @@ h3{
 }
 #contact .contact-item {
     width: 80%;
-    padding: 20px;
     text-align: center;
     border-radius: 10px;
     padding: 30px;
@@ -228,18 +216,18 @@ h3{
     align-items: center;
     flex-direction: column;
     box-shadow: 0px 0px 18px 0  #0000002c;
-    transition: .3s ease box-shadow;
-    
-    
+    transition: .3s ease box-shadow;   
 }
 #contact .contact-item:hover {
     box-shadow: 0px 0px 5px 0;
 }
-#contact .icon {
+
+.icon {
     width: 10px;
     margin: 0 auto;
     margin-bottom: 10px;
 }
+
 #contact .contact-info h1 {
     font-size: 2rem;
     line-height: 2rem;
@@ -301,31 +289,34 @@ h3{
     display: flex;
 } */
 
- #footer {
+#footer {
     background-image: linear-gradient(60deg, #5EA9A6 0%, #5EA9A6 100%);
-    transform: translateY(35%);
 }
+
 #footer .footer {
+    width: 100%;
+    margin-top: 4rem;
     min-height: 200px;
     padding-top: 30px;
     padding-bottom: 10px;
 }
 
 #footer h2{
+    width: 100%;
     color: rgb(255, 255, 255);
     font-weight:400;
     font-size: 1rem;
     letter-spacing: 1rem;
     margin-top: 1px;
     margin-bottom: 5px;
-    transform: translateX(35%);
+    transform: translateX(15%);
   
 }
 
 #footer .social-icon {
     margin-bottom: 30px;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     margin: 1;
@@ -348,10 +339,104 @@ h3{
 #footer p {
     color: white;
     font-size: 1rem;
-    transform: translateX(35%);
+    transform: translateX(30%);
 } 
 
 #footer .brand{
-    transform: translateX(23%);
+    transform: translateX(20%);
 }
 
+@media screen and (max-width : 500px) {
+
+    .banner__info{
+        top: 10%;
+        margin: 0 10%;
+        width: 50%;
+        padding: 0;
+    }
+    
+    .banner__info h1{
+        font-size: 2.3rem;
+    }
+
+    .banner{
+        margin: 5%;
+        background-image: url(img/1110.jpeg);
+        background-position-x: -5.5rem;
+        background-repeat: no-repeat;
+        background-size: 35rem;
+        height: 100vh;
+        transform: translateY(10%);   
+    }
+
+    #contact .contact-info h1 {
+        font-size: 1rem;
+        line-height: 2rem;
+        font-weight: 400;   
+    }
+    
+    #contact .contact-info h2 {
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+        font-weight: 300;   
+    }
+
+    #contact .contact-item {
+        border-radius: 10px;
+        width: 80%;
+        height: 10rem;
+        padding: 10px;
+        margin: 5%;
+    }
+
+    #contact .contact-items {
+        display: inline-block;
+        margin: 5%;
+    }
+
+    #footer .footer {
+        width: 100%;
+    }
+    
+    #footer h2{
+        color: rgb(255, 255, 255);
+        font-weight:400;
+        font-size: 0.8rem;
+        letter-spacing: 1rem;
+        margin-top: 1px;
+        margin-bottom: 5px;
+        transform: translateX(5%);
+      
+    }
+    
+    #footer .social-icon {
+        margin-bottom: 30px;
+        flex-direction: column;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        margin: 1;
+        transform: translateX(2%);
+    }
+    
+    #footer .social-item {
+        height: 80px;
+        width: 80px;
+        margin: 0 8px;
+    }
+    
+    #footer p {
+        color: white;
+        font-size: 0.8rem;
+        transform: translateX(5%);
+    } 
+    
+    #footer .brand{
+        transform: translateX(5%);
+    }
+
+    .brand h1 {
+        font-size: 1.5rem;
+    }
+    
+}
